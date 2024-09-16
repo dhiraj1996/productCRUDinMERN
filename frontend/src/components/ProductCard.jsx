@@ -35,7 +35,7 @@ const ProductCard = ({ product }) => {
     }
 
     const handleUpdatedProduct = async(pid, updatedProduct) => {
-        const {success, message} = await updateProduct(pid, updatedProduct);
+        const {success} = await updateProduct(pid, updatedProduct);
         onClose();
         if (!success){
             toast({
